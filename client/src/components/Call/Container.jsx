@@ -29,7 +29,6 @@ function Container({data}) {
         const {
           data: {token: returnedToken}
         } = await axios.get(`${GET_CALL_TOKEN}/${userInfo.id}`);
-        console.log(data);
         setToken(returnedToken);
 
       } catch (err) {
